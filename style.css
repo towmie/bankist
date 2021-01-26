@@ -21,6 +21,7 @@ body {
   background-color: #f3f3f3;
   height: 100vh;
   padding: 2rem;
+  position: relative;
 }
 
 nav {
@@ -294,4 +295,55 @@ h2 {
 
 .timer {
   font-weight: 600;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 60%;
+  min-height: 45rem;
+  border-radius: 3rem;
+  box-shadow: 0 0 1rem rgb(121, 121, 121);
+  padding: 2rem;
+  font-family: sans-serif;
+  transition: all 1s;
+}
+
+.modal__heading {
+  text-align: center;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+.modal__warning {
+  text-transform: uppercase;
+  color: #00a708;
+  font-weight: 700;
+  font-size: 1.8em;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.modal__text {
+  font-size: 1.7rem;
+  line-height: 2.3rem;
+  padding: 0 2rem;
+  margin: 1rem 0;
+}
+
+.modal__list {
+  list-style: none;
+  display: flex;
+  /* justify-content: space-around; */
+  align-items: center;
+  flex-wrap: wrap;
+  padding-left: 4rem;
+}
+.modal__item {
+  width: 50%;
+  font-size: 1.7rem;
+  margin-bottom: 1rem;
 }

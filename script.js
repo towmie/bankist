@@ -84,7 +84,7 @@ const inputTransferAmount = document.querySelector('.form__input--amount');
 const inputLoanAmount = document.querySelector('.form__input--loan-amount');
 const inputCloseUsername = document.querySelector('.form__input--user');
 const inputClosePin = document.querySelector('.form__input--pin');
-
+const modal = document.querySelector('.modal');
 // Functions
 
 const formatMovementDate = function (date, locale) {
@@ -241,6 +241,7 @@ btnLogin.addEventListener('click', function (e) {
     timer = startLogOutTimer();
 
     updateUI(currentAccount);
+    modal.style.opacity = 0;
   }
 });
 
